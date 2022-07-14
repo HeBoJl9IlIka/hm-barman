@@ -1,0 +1,356 @@
+fileFormatVersion: 2
+guid: 763ad3c8a113f554c960bd53d5f093a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 203484876693109546
+    second: FluidJetAnimation_0
+  - first:
+      213: 3235487249552760109
+    second: FluidJetAnimation_1
+  - first:
+      213: -5313260367090260443
+    second: FluidJetAnimation_2
+  - first:
+      213: -2396560075766108422
+    second: FluidJetAnimation_3
+  - first:
+      213: -911854861597743363
+    second: FluidJetAnimation_4
+  - first:
+      213: 8639547457814954756
+    second: FluidJetAnimation_5
+  - first:
+      213: -7213794046932822638
+    second: FluidJetAnimation_6
+  - first:
+      213: -4057529649967930333
+    second: FluidJetAnimation_7
+  - first:
+      213: -8469931821256336132
+    second: FluidJetAnimation_8
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FluidJetAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 129
+        height: 325
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64.5, y: -162.5}
+        - {x: -64.5, y: -104.5}
+        - {x: -37.5, y: 36.5}
+        - {x: 36.5, y: 162.5}
+        - {x: 64.5, y: 162.5}
+        - {x: 64.5, y: 148.5}
+        - {x: -23.5, y: -162.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bf470da6ce2d200800000000000000
+      internalID: 203484876693109546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluidJetAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 85
+        width: 136
+        height: 407
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: -203.5}
+        - {x: -68, y: -203.5}
+        - {x: -68, y: -71.5}
+        - {x: -27, y: 134.5}
+        - {x: 52, y: 203.5}
+        - {x: 68, y: 203.5}
+        - {x: 68, y: 181.5}
+        - {x: 25, y: 128.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dd5e8d282c6ec20800000000000000
+      internalID: 3235487249552760109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluidJetAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 24
+        width: 147
+        height: 463
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73.5, y: -231.5}
+        - {x: -73.5, y: -98.5}
+        - {x: -31.5, y: 166.5}
+        - {x: 31.5, y: 231.5}
+        - {x: 73.5, y: 231.5}
+        - {x: 73.5, y: 199.5}
+        - {x: -34.5, y: -231.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5266c64d8d18346b0800000000000000
+      internalID: -5313260367090260443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluidJetAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 27
+        width: 146
+        height: 466
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -73, y: -233}
+        - {x: -73, y: -117}
+        - {x: -26.5, y: 162.5}
+        - {x: 37, y: 233}
+        - {x: 73, y: 233}
+        - {x: 73, y: 200}
+        - {x: -29, y: -233}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afee3110f45bdbed0800000000000000
+      internalID: -2396560075766108422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluidJetAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 83
+        width: 138
+        height: 403
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6e0c7a5d07853f0800000000000000
+      internalID: -911854861597743363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluidJetAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 30
+        width: 149
+        height: 453
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403803b73a6d5e770800000000000000
+      internalID: 8639547457814954756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluidJetAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 53
+        width: 125
+        height: 420
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295ddbdd88473eb90800000000000000
+      internalID: -7213794046932822638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluidJetAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 0
+        width: 149
+        height: 426
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324eb04f742c0b7c0800000000000000
+      internalID: -4057529649967930333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4211775fe9a0d5e42aa9e7c24f058829
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
