@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class LevelProgress : MonoBehaviour
 {
-    [SerializeField] private ContainerFillingState _containerFillingState;
+    [SerializeField] private ShakerLayers _shakerLayers;
     [SerializeField] private CheckCupChoiceState _checkCupChoiceState;
     [SerializeField] private CheckChoisToppingsState _checkChoisToppingsState;
     [SerializeField] private int _numberPoints;
@@ -15,14 +15,14 @@ public class LevelProgress : MonoBehaviour
 
     private void OnEnable()
     {
-        _containerFillingState.Filled += OnFilled;
+        _shakerLayers.Filled += OnFilled;
         _checkCupChoiceState.Completed += OnCompletedCupChoice;
         _checkChoisToppingsState.Completed += OnCompletedChoisToppings;
     }
 
     private void OnDisable()
     {
-        _containerFillingState.Filled -= OnFilled;
+        _shakerLayers.Filled -= OnFilled;
         _checkCupChoiceState.Completed -= OnCompletedCupChoice;
         _checkChoisToppingsState.Completed -= OnCompletedChoisToppings;
     }

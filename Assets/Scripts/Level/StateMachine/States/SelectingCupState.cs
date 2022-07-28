@@ -3,13 +3,13 @@ using UnityEngine.Events;
 
 public class SelectingCupState : State
 {
-    public event UnityAction<Cup> Selected;
-
-    public bool IsSelected { get; private set; }
     public Cup Cup { get; private set; }
     public Drink Drink { get; private set; }
     public Transform StartPositionDrink { get; private set; }
     public Transform EndPositionDrink { get; private set; }
+    public bool IsSelected { get; private set; }
+
+    public event UnityAction<Cup> Selected;
 
     private void Start() { }
     

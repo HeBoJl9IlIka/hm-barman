@@ -73,7 +73,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 70
+  spritePixelsToUnits: 71
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -146,9 +146,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 168
-        width: 129
-        height: 325
+        y: 0
+        width: 114
+        height: 464
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: FluidJetAnimation_1
       rect:
         serializedVersion: 2
-        x: 103
-        y: 85
-        width: 136
-        height: 407
+        x: 131
+        y: 11
+        width: 125
+        height: 453
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: FluidJetAnimation_2
       rect:
         serializedVersion: 2
-        x: 207
-        y: 24
-        width: 147
-        height: 463
+        x: 273
+        y: 11
+        width: 123
+        height: 453
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +230,10 @@ TextureImporter:
       name: FluidJetAnimation_3
       rect:
         serializedVersion: 2
-        x: 353
-        y: 27
-        width: 146
-        height: 466
+        x: 407
+        y: 13
+        width: 132
+        height: 451
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: FluidJetAnimation_4
       rect:
         serializedVersion: 2
-        x: 531
-        y: 83
-        width: 138
-        height: 403
+        x: 552
+        y: 14
+        width: 137
+        height: 450
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +279,10 @@ TextureImporter:
       name: FluidJetAnimation_5
       rect:
         serializedVersion: 2
-        x: 686
-        y: 30
-        width: 149
-        height: 453
+        x: 705
+        y: 10
+        width: 140
+        height: 454
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +300,10 @@ TextureImporter:
       name: FluidJetAnimation_6
       rect:
         serializedVersion: 2
-        x: 850
-        y: 53
-        width: 125
-        height: 420
+        x: 873
+        y: 11
+        width: 133
+        height: 453
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,10 +321,10 @@ TextureImporter:
       name: FluidJetAnimation_7
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 0
-        width: 149
-        height: 426
+        x: 1019
+        y: 27
+        width: 136
+        height: 437
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}

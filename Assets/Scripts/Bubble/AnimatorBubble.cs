@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(ParticleSystem))]
 public class AnimatorBubble : MonoBehaviour
 {
-    [SerializeField] private ContainerFillingState _containerFillingState;
+    [SerializeField] private ShakerFillingState _containerFillingState;
 
     private ParticleSystem _particleSystem;
 

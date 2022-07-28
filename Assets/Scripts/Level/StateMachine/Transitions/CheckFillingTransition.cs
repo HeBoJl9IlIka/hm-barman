@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CheckFillingTransition : Transition
 {
-    [SerializeField] private ContainerFillingState _containerFillingState;
+    [SerializeField] private ShakerFillingState _containerFillingState;
 
     private void Update()
     {

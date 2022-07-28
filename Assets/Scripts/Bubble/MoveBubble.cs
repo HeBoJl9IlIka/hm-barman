@@ -2,20 +2,21 @@ using UnityEngine;
 
 public class MoveBubble : MonoBehaviour
 {
-    [SerializeField] private ContainerFillingState _containerFillingState;
+    [SerializeField] private ShakerFillingState _shakerFillingState;
+    [SerializeField] private ShakerLayers _shakerLayers;
 
     private void OnEnable()
     {
-        _containerFillingState.Pouring += OnPouring;
+        _shakerFillingState.Pouring += OnPouring;
     }
 
     private void OnDisable()
     {
-        _containerFillingState.Pouring -= OnPouring;
+        _shakerFillingState.Pouring -= OnPouring;
     }
 
     private void OnPouring()
     {
-        transform.position = new Vector3(transform.position.x, _containerFillingState.CurrentPositionDrink);
+        transform.position = new Vector3(transform.position.x, _shakerLayers.CurrentPositionDrink, transform.position.z);
     }
 }

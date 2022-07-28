@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Glass
-  m_Shader: {fileID: -6465566751694194690, guid: a42a0f3e364892949aa28a677a701dc0, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALLOWALPHAOVERFLOW_OFF _ALPHAPREMULTIPLY_ON _CELPRIMARYMODE_SINGLE
     _COLORMODE_LINEAR _FOAMMODE_GRADIENT_NOISE _OPAQUE_OFF _RECEIVE_SHADOWS_OFF _TEXTUREBLENDINGMODE_MULTIPLY
     _UNITYSHADOWMODE_NONE _WAVEMODE_ROUND
@@ -16,7 +16,8 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses:
   - SRPDEFAULTUNLIT
   m_SavedProperties:
@@ -246,8 +247,8 @@ Material:
     - _FoamSpeed: 0.1
     - _FoamStretchX: 1
     - _FoamStretchY: 1
-    - _GlossMapScale: 1
-    - _Glossiness: 0.7
+    - _GlossMapScale: 0.753
+    - _Glossiness: 0.513
     - _GlossyReflections: 1
     - _GradientAngle: 0
     - _GradientCenterX: 0
@@ -298,7 +299,7 @@ Material:
     - _Surface: 0
     - _TextureBlendingMode: 0
     - _TextureImpact: 1
-    - _UVSec: 0
+    - _UVSec: 1
     - _UnityShadowMode: 0
     - _UnityShadowOcclusion: 0
     - _UnityShadowPower: 0.2
@@ -322,7 +323,7 @@ Material:
     - Vector3_9bae553e389f470587fcd14947ebb9fd: {r: 0, g: 0, b: 0, a: 0}
     - Vector3_f1521692a89b4503b486330b5d30cc97: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0, g: 0.38431406, b: 1, a: 0.039215688}
+    - _Color: {r: 0.7311321, g: 0.8345428, b: 1, a: 0.5529412}
     - _Color1: {r: 0, g: 0.7, b: 0.74, a: 0}
     - _Color2: {r: 0.96999997, g: 0.67, b: 0.50999993, a: 0}
     - _ColorDeep: {r: 0.65, g: 0.9, b: 1, a: 1}

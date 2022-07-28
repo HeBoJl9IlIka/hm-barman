@@ -4,37 +4,40 @@ using UnityEngine;
 
 public class AnimatorDrink : MonoBehaviour
 {
+    private const float PourMultiplier = 0.3f;
+    private const float MixedMultiplier = 1f;
+    private const float Duration = 1;
+
     [SerializeField] private LiquidVolume _liquidVolume;
-    [SerializeField] private ContainerFillingState _containerFilling;
+    [SerializeField] private ShakerFillingState _shakerFillingState;
+    [SerializeField] private ShakerLayers _shakerLayers;
     [SerializeField] private MixedState _mixedState;
-    [SerializeField] private float _riseTime;
-    [SerializeField] private float _defaultMultiplier;
-    [SerializeField] private float _mixedMultiplier;
 
     private Coroutine _currentCoroutine;
-    private float _multiplier;
     private float _time;
 
     private void OnEnable()
     {
-        _containerFilling.Pouring += OnPouring;
-        _containerFilling.Stopped += OnStopping;
-        _containerFilling.Poured += OnStopping;
+        _shakerFillingState.Stopped += OnStopped;
+
+        _shakerLayers.Pouring += OnPouring;
+        _shakerLayers.Poured += OnStopped;
 
         _mixedState.Moving += OnMoving;
-        _mixedState.Stopped += OnStopping;
-        _mixedState.Mixed += OnStopping;
+        _mixedState.Stopped += OnStopped;
+        _mixedState.Mixed += OnStopped;
     }
 
     private void OnDisable()
     {
-        _containerFilling.Pouring -= OnPouring;
-        _containerFilling.Stopped -= OnStopping;
-        _containerFilling.Poured -= OnStopping;
+        _shakerFillingState.Stopped -= OnStopped;
+
+        _shakerLayers.Pouring -= OnPouring;
+        _shakerLayers.Poured -= OnStopped;
 
         _mixedState.Moving -= OnMoving;
-        _mixedState.Stopped -= OnStopping;
-        _mixedState.Mixed -= OnStopping;
+        _mixedState.Stopped -= OnStopped;
+        _mixedState.Mixed -= OnStopped;
     }
 
     private void OnMoving()
@@ -42,7 +45,7 @@ public class AnimatorDrink : MonoBehaviour
         if (_currentCoroutine != null)
             StopCoroutine(_currentCoroutine);
 
-        _currentCoroutine = StartCoroutine(Play(_mixedMultiplier));
+        _currentCoroutine = StartCoroutine(Play(MixedMultiplier));
     }
 
     private void OnPouring()
@@ -50,10 +53,10 @@ public class AnimatorDrink : MonoBehaviour
         if (_currentCoroutine != null)
             StopCoroutine(_currentCoroutine);
 
-        _currentCoroutine = StartCoroutine(Play());
+        _currentCoroutine = StartCoroutine(Play(PourMultiplier));
     }
 
-    private void OnStopping()
+    private void OnStopped()
     {
         if (_currentCoroutine != null)
             StopCoroutine(_currentCoroutine);
@@ -61,31 +64,14 @@ public class AnimatorDrink : MonoBehaviour
         _currentCoroutine = StartCoroutine(Stop());
     }
 
-    private IEnumerator Play()
-    {
-        _multiplier = _defaultMultiplier;
-
-        while (_time < _riseTime)
-        {
-            _time += Time.deltaTime;
-
-            _liquidVolume.turbulence1 = _time * _multiplier;
-            _liquidVolume.turbulence2 = _time * _multiplier;
-
-            yield return null;
-        }
-    }
-
     private IEnumerator Play(float multiplier)
     {
-        _multiplier = multiplier;
-
-        while (_time < _riseTime)
+        while (_time < Duration)
         {
             _time += Time.deltaTime;
 
-            _liquidVolume.turbulence1 = _time * _multiplier;
-            _liquidVolume.turbulence2 = _time * _multiplier;
+            _liquidVolume.turbulence1 = _time * multiplier;
+            _liquidVolume.turbulence2 = _time * multiplier;
 
             yield return null;
         }
@@ -97,8 +83,8 @@ public class AnimatorDrink : MonoBehaviour
         {
             _time -= Time.deltaTime;
 
-            _liquidVolume.turbulence1 = _time * _multiplier;
-            _liquidVolume.turbulence2 = _time * _multiplier;
+            _liquidVolume.turbulence1 = _time * PourMultiplier;
+            _liquidVolume.turbulence2 = _time * PourMultiplier;
 
             yield return null;
         }

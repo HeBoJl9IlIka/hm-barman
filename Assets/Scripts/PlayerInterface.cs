@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class PlayerInterface : MonoBehaviour
 {
-    [SerializeField] private ContainerFillingState _containerFillingState;
+    [SerializeField] private ShakerLayers _shakerLayers;
     [SerializeField] private MixedState _mixedState;
     [SerializeField] private SelectingCupState _selectingCupState;
     [SerializeField] private PouringState _pouringState;
@@ -24,7 +24,7 @@ public class PlayerInterface : MonoBehaviour
 
     private void OnEnable()
     {
-        _containerFillingState.Poured += OnPouredShaker;
+        _shakerLayers.Poured += OnPouredShaker;
         _shakerClosingAnimationState.Closed += OnClosed;
         _mixedState.Mixed += OnMixed;
         _selectingCupState.Selected += OnSelectedCup;
@@ -35,7 +35,7 @@ public class PlayerInterface : MonoBehaviour
 
     private void OnDisable()
     {
-        _containerFillingState.Poured -= OnPouredShaker;
+        _shakerLayers.Poured -= OnPouredShaker;
         _shakerClosingAnimationState.Closed -= OnClosed;
         _mixedState.Mixed -= OnMixed;
         _selectingCupState.Selected -= OnSelectedCup;

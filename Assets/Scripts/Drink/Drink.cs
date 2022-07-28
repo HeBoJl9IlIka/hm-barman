@@ -6,7 +6,7 @@ public class Drink : MonoBehaviour
 
     public Color Color => _color;
 
-    protected void SetColor(Color color)
+    private void SetColor(Color color)
     {
         _color = color;
     }

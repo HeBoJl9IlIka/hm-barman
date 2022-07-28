@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class CheckFillingState : State
 {
-    [SerializeField] private ContainerFillingState _containerFillingState;
+    [SerializeField] private ShakerLayers _shakerLayers;
     [SerializeField] private Tasks _task;
 
     public bool IsReady { get; private set; }
@@ -14,20 +14,20 @@ public class CheckFillingState : State
 
     private void OnEnable()
     {
-        if (_containerFillingState.ReadyDrink.Length == _task.Drinks.Count)
+        if (_shakerLayers.Layers.Length == _task.Drinks.Count)
         {
             for (int i = 0; i < _task.Drinks.Count; i++)
             {
-                if (_containerFillingState.ReadyDrink[i].color == _task.Drinks[i].color)
+                if (_shakerLayers.Layers[i].color == _task.Drinks[i].color)
                 {
-                    if (_containerFillingState.ReadyDrink[i].amount > _task.Drinks[i].amount + _task.Dispersion)
+                    if (_shakerLayers.Layers[i].amount > _task.Drinks[i].amount + _task.Dispersion)
                     {
                         IsReady = true;
                         _ready?.Invoke();
                         return;
                     }
 
-                    if (_containerFillingState.ReadyDrink[i].amount < _task.Drinks[i].amount - _task.Dispersion)
+                    if (_shakerLayers.Layers[i].amount < _task.Drinks[i].amount - _task.Dispersion)
                     {
                         IsReady = true;
                         _ready?.Invoke();
