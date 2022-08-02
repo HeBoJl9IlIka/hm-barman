@@ -13,10 +13,11 @@ public class ShakerLayers : MonoBehaviour
     private const float MinAmountMixingLayer = 0;
     private const float AmountStep = 0.001f;
 
-    [SerializeField] private ShakerFillingState _shakerFillingState;
     [SerializeField] private LiquidVolume _liquidVolume;
     [SerializeField] private LiquidVolume.LiquidLayer _mixingLayer;
+    [SerializeField] private ButtonPouring[] _buttonsPouring;
 
+    private Drink _drink;
     private Coroutine _currentCoroutine;
     private LiquidVolume.LiquidLayer _currentLayer;
     private List<LiquidVolume.LiquidLayer> _layers;
@@ -24,6 +25,7 @@ public class ShakerLayers : MonoBehaviour
     private int _numberCurrentLayer;
     private int _numberMixingLayers;
     private float _delayTime;
+    private bool _isPour;
 
     public LiquidVolume.LiquidLayer[] Layers => _layers.ToArray();
     public float CurrentPositionDrink => _liquidVolume.liquidSurfaceYPosition;
@@ -31,8 +33,9 @@ public class ShakerLayers : MonoBehaviour
     private bool _isFilled => _liquidVolume.level >= TargetLevel;
 
     public event UnityAction Pouring;
+    public event UnityAction Stopped;
     public event UnityAction Poured;
-    public event UnityAction<float> Filled;
+    public event UnityAction<float> Filling;
 
     private void Start()
     {
@@ -49,7 +52,7 @@ public class ShakerLayers : MonoBehaviour
             return;
         }
 
-        if (_shakerFillingState.IsPour == false)
+        if (_isPour == false)
             return;
 
         if (_delayTime > 0)
@@ -61,36 +64,42 @@ public class ShakerLayers : MonoBehaviour
             _liquidVolume.liquidLayers[_numberCurrentLayer].amount += SpeedFilling;
             _liquidVolume.UpdateLayers();
 
-            if (_currentCoroutine != null)
-                StopCoroutine(_currentCoroutine);
-
             if(_liquidVolume.liquidLayers[_numberMixingLayers].amount < MaxAmountMixingLayer)
                 _liquidVolume.liquidLayers[_numberMixingLayers].amount += AmountStep;
 
-            Pouring?.Invoke();
-            Filled?.Invoke(_liquidVolume.level);
+                Pouring?.Invoke();
+            Filling?.Invoke(_liquidVolume.level);
         }
     }
 
     private void OnEnable()
     {
-        _shakerFillingState.Pouring += OnPouring;
-        _shakerFillingState.Stopped += OnStopped;
+        foreach (var button in _buttonsPouring)
+        {
+            button.Pressed += OnPressed;
+            button.Released += OnReleased;
+        }
     }
 
     private void OnDisable()
     {
-        _shakerFillingState.Pouring -= OnPouring;
-        _shakerFillingState.Stopped -= OnStopped;
+        foreach (var button in _buttonsPouring)
+        {
+            button.Pressed -= OnPressed;
+            button.Released -= OnReleased;
+        }
     }
 
-    private void OnPouring()
+    private void OnPressed(Drink drink)
     {
+        _drink = drink;
+        _isPour = true;
         TryCreateNewLayer();
     }
 
-    private void OnStopped()
+    private void OnReleased()
     {
+        _isPour = false;
         Stop();
     }
 
@@ -101,8 +110,10 @@ public class ShakerLayers : MonoBehaviour
 
         _currentCoroutine = StartCoroutine(HideMixingLayer());
 
+        Stopped?.Invoke();
+
         _delayTime = Delay;
-        _lastColorDrink = _shakerFillingState.Drink.Color;
+        _lastColorDrink = _drink.Color;
 
         SaveCurrentLayer();
 
@@ -115,9 +126,9 @@ public class ShakerLayers : MonoBehaviour
 
     private void TryCreateNewLayer()
     {
-        if (_lastColorDrink != _shakerFillingState.Drink.Color)
+        if (_lastColorDrink != _drink.Color)
         {
-            Color drinkColor = _shakerFillingState.Drink.Color;
+            Color drinkColor = _drink.Color;
             float defaultDensity = 1;
             
             Rewrite();

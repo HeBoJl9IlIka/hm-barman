@@ -2,17 +2,16 @@ using UnityEngine;
 
 public class MoveBubble : MonoBehaviour
 {
-    [SerializeField] private ShakerFillingState _shakerFillingState;
     [SerializeField] private ShakerLayers _shakerLayers;
 
     private void OnEnable()
     {
-        _shakerFillingState.Pouring += OnPouring;
+        _shakerLayers.Pouring += OnPouring;
     }
 
     private void OnDisable()
     {
-        _shakerFillingState.Pouring -= OnPouring;
+        _shakerLayers.Pouring -= OnPouring;
     }
 
     private void OnPouring()

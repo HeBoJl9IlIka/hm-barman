@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class LaunchingCupTransition : Transition
 {
-    [SerializeField] private MoveCocktailState _moveCocktailState;
+    [SerializeField] private MovingCupState _movingCupState;
 
     private void Update()
     {
-        NeedTransit = _moveCocktailState.IsMoved;
+        NeedTransit = _movingCupState.IsReady;
     }
 }

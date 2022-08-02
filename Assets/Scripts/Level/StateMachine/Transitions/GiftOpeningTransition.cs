@@ -8,6 +8,6 @@ public class GiftOpeningTransition : Transition
 
     private void Update()
     {
-        NeedTransit = _launchingCupState.IsLaunched;
+        NeedTransit = _launchingCupState.IsReady;
     }
 }

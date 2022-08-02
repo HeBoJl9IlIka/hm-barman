@@ -11,6 +11,7 @@ public class Cup : MonoBehaviour
     public enum FormFactor
     {
         Wine,
-        Cognac
+        Cognac,
+        Bear
     }
 }

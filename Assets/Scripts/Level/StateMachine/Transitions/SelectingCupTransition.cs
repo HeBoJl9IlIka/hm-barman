@@ -6,6 +6,6 @@ public class SelectingCupTransition : Transition
 
     private void Update()
     {
-        NeedTransit = _mixedState.IsMixed;
+        NeedTransit = _mixedState.IsReady;
     }
 }

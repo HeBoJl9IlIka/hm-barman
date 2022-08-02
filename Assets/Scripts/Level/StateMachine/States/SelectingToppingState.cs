@@ -3,29 +3,45 @@ using UnityEngine.Events;
 
 public class SelectingToppingState : State
 {
-    public bool IsSelected { get; private set; }
-    public Topping Topping { get; private set; }
-    public Transform StartPosition { get; private set; }
-    public Transform EndPosition { get; private set; }
+    private const float DelayReportReadiness = 1f;
 
-    public event UnityAction<Topping> Selected;
+    [SerializeField] private SelectingTopping[] _selectingToppings;
+    [SerializeField] private SelectingCupState _selectingCupState;
 
-    private void Start() { }
+    private Topping _topping;
 
-    public void SetTopping(Topping topping)
+    public Topping Topping => _topping;
+    public bool IsReady { get; private set; }
+
+    public event UnityAction Selected;
+
+    private void OnEnable()
     {
-        Topping = topping;
-        Selected?.Invoke(topping);
-        IsSelected = true;
+        foreach (var topping in _selectingToppings)
+        {
+            topping.Selected += OnSelected;
+        }
     }
 
-    public void SetStartPosition(Transform startPosition)
+    private void OnDisable()
     {
-        StartPosition = startPosition;
+        foreach (var topping in _selectingToppings)
+        {
+            topping.Selected -= OnSelected;
+        }
     }
 
-    public void SetEndPosition(Transform endPosition)
+    private void OnSelected(Topping topping)
     {
-        EndPosition = endPosition;
+        Selected?.Invoke();
+
+        _topping = topping;
+        _topping.transform.SetParent(_selectingCupState.Cup.transform);
+        Invoke(nameof(ReportReadiness), DelayReportReadiness);
+    }
+
+    public void ReportReadiness()
+    {
+        IsReady = true;
     }
 }

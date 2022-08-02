@@ -6,6 +6,6 @@ public class SelectingToppingTransition : Transition
 
     private void Update()
     {
-        NeedTransit = _pouringState.IsPoured;
+        NeedTransit = _pouringState.IsReady;
     }
 }

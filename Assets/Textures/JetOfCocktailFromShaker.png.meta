@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 490d2377eabacf443a9aade1d5f1c034
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2152218995867019098
+    second: JetOfCocktailFromShaker_0
+  - first:
+      213: -3487956094430105254
+    second: JetOfCocktailFromShaker_1
+  - first:
+      213: 2737917593893568240
+    second: JetOfCocktailFromShaker_2
+  - first:
+      213: 3188236230219203785
+    second: JetOfCocktailFromShaker_3
+  - first:
+      213: 8494509431968691884
+    second: JetOfCocktailFromShaker_4
+  - first:
+      213: -2419268749134131517
+    second: JetOfCocktailFromShaker_5
+  - first:
+      213: 8678125610230528354
+    second: JetOfCocktailFromShaker_6
+  - first:
+      213: -7093648554226698451
+    second: JetOfCocktailFromShaker_7
+  - first:
+      213: 3107442429600748333
+    second: JetOfCocktailFromShaker_8
+  - first:
+      213: 7867403411821068259
+    second: JetOfCocktailFromShaker_9
+  - first:
+      213: -2310220340245196939
+    second: JetOfCocktailFromShaker_10
+  - first:
+      213: 1873245218919986360
+    second: JetOfCocktailFromShaker_11
+  - first:
+      213: -2806537448698158231
+    second: JetOfCocktailFromShaker_12
+  - first:
+      213: 7153777830322648382
+    second: JetOfCocktailFromShaker_13
+  - first:
+      213: 3940344244942807986
+    second: JetOfCocktailFromShaker_14
+  - first:
+      213: 5603974109095806549
+    second: JetOfCocktailFromShaker_15
+  - first:
+      213: 5924621479978736148
+    second: JetOfCocktailFromShaker_16
+  - first:
+      213: -8105181180647577619
+    second: JetOfCocktailFromShaker_17
+  - first:
+      213: 6860232211594953240
+    second: JetOfCocktailFromShaker_18
+  - first:
+      213: 6282463328271551241
+    second: JetOfCocktailFromShaker_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 199
+        width: 36
+        height: 26
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57608716c73edd10800000000000000
+      internalID: 2152218995867019098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 174
+        width: 52
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51b55f796a489fc0800000000000000
+      internalID: -3487956094430105254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 156
+        width: 55
+        height: 81
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe7158ab890ff520800000000000000
+      internalID: 2737917593893568240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 142
+        width: 52
+        height: 91
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c40f3a95f3ee3c20800000000000000
+      internalID: 3188236230219203785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_4
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 101
+        width: 49
+        height: 130
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6f2b1925f82e570800000000000000
+      internalID: 8494509431968691884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_5
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 75
+        width: 64
+        height: 167
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce08a7f3e70d6ed0800000000000000
+      internalID: -2419268749134131517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_6
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 45
+        width: 54
+        height: 191
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269b20a8345ee6870800000000000000
+      internalID: 8678125610230528354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_7
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 14
+        width: 59
+        height: 233
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27bad3493c4e8d90800000000000000
+      internalID: -7093648554226698451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_8
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 0
+        width: 79
+        height: 254
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2354500d6adf1b20800000000000000
+      internalID: 3107442429600748333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_9
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 0
+        width: 80
+        height: 266
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef7a4248b1ae2d60800000000000000
+      internalID: 7867403411821068259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_10
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1
+        width: 123
+        height: 268
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f8dc237d270ffd0800000000000000
+      internalID: -2310220340245196939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_11
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 130
+        height: 273
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4bcea0a9a1ff910800000000000000
+      internalID: 1873245218919986360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_12
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1
+        width: 132
+        height: 272
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963e3816f0d2d09d0800000000000000
+      internalID: -2806537448698158231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_13
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1
+        width: 121
+        height: 267
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35327ac803574360800000000000000
+      internalID: 7153777830322648382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_14
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1
+        width: 100
+        height: 261
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b32294c63aeea630800000000000000
+      internalID: 3940344244942807986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_15
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 1
+        width: 101
+        height: 270
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5564427d2c055cd40800000000000000
+      internalID: 5603974109095806549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_16
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1
+        width: 72
+        height: 252
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a18c698db783250800000000000000
+      internalID: 5924621479978736148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_17
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 1
+        width: 53
+        height: 220
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7e157c8ac948f80800000000000000
+      internalID: -8105181180647577619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_18
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 0
+        width: 27
+        height: 157
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8124fc079d0743f50800000000000000
+      internalID: 6860232211594953240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JetOfCocktailFromShaker_19
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 1
+        width: 24
+        height: 109
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b4b047c1bcf2750800000000000000
+      internalID: 6282463328271551241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

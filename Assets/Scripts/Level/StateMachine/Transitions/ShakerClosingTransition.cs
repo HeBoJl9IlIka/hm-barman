@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class ShakerClosingTransition : Transition
 {
-    [SerializeField] private CheckFillingState _checkFillingState;
+    [SerializeField] private CheckingFillingState _checkingFillingState;
 
     private void Update()
     {
-        NeedTransit = _checkFillingState.IsReady;
+        NeedTransit = _checkingFillingState.IsReady;
     }
 }

@@ -9,7 +9,6 @@ public class AnimatorDrink : MonoBehaviour
     private const float Duration = 1;
 
     [SerializeField] private LiquidVolume _liquidVolume;
-    [SerializeField] private ShakerFillingState _shakerFillingState;
     [SerializeField] private ShakerLayers _shakerLayers;
     [SerializeField] private MixedState _mixedState;
 
@@ -18,11 +17,9 @@ public class AnimatorDrink : MonoBehaviour
 
     private void OnEnable()
     {
-        _shakerFillingState.Stopped += OnStopped;
-
         _shakerLayers.Pouring += OnPouring;
+        _shakerLayers.Stopped += OnStopped;
         _shakerLayers.Poured += OnStopped;
-
         _mixedState.Moving += OnMoving;
         _mixedState.Stopped += OnStopped;
         _mixedState.Mixed += OnStopped;
@@ -30,11 +27,9 @@ public class AnimatorDrink : MonoBehaviour
 
     private void OnDisable()
     {
-        _shakerFillingState.Stopped -= OnStopped;
-
         _shakerLayers.Pouring -= OnPouring;
+        _shakerLayers.Stopped -= OnStopped;
         _shakerLayers.Poured -= OnStopped;
-
         _mixedState.Moving -= OnMoving;
         _mixedState.Stopped -= OnStopped;
         _mixedState.Mixed -= OnStopped;

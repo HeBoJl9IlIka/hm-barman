@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using LiquidVolumeFX;
 
 public class MixedState : State
 {
@@ -16,7 +15,7 @@ public class MixedState : State
     private bool _isMixed => MixingTime >= _targetMixingTime;
 
     public float MixingTime { get; private set; }
-    public bool IsMixed { get; private set; }
+    public bool IsReady { get; private set; }
 
     public event UnityAction Moving;
     public event UnityAction Stopped;
@@ -59,12 +58,10 @@ public class MixedState : State
             Mixed?.Invoke();
             Invoke(nameof(ReportReadiness), DelayReportReadiness);
         }
-       
     }
 
     public void ReportReadiness()
     {
-        _animator.enabled = false;
-        IsMixed = true;
+        IsReady = true;
     }
 }

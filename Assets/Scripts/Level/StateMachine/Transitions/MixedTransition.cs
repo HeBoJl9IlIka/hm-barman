@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class MixedTransition : Transition
 {
-    [SerializeField] private ShakerClosingAnimationState _shakerClosingAnimationState;
+    [SerializeField] private ShakerClosingState _shakerClosingState;
 
     private void Update()
     {
-        NeedTransit = _shakerClosingAnimationState.IsClosed;
+        NeedTransit = _shakerClosingState.IsReady;
     }
 }
