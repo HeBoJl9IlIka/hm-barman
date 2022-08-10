@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class ShakerLayers : MonoBehaviour
 {
-    private const float SpeedFilling = 0.005f;
+    private const float SpeedFilling = 0.25f;
     private const float TargetLevel = 0.9f;
     private const float Delay = 1;
     private const float MaxAmountMixingLayer = 0.02f;
@@ -57,11 +57,11 @@ public class ShakerLayers : MonoBehaviour
 
         if (_delayTime > 0)
         {
-            _delayTime -= Time.deltaTime;
+            _delayTime -= UnityEngine.Time.deltaTime;
         }
         else
         {
-            _liquidVolume.liquidLayers[_numberCurrentLayer].amount += SpeedFilling;
+            _liquidVolume.liquidLayers[_numberCurrentLayer].amount += SpeedFilling * UnityEngine.Time.deltaTime;
             _liquidVolume.UpdateLayers();
 
             if(_liquidVolume.liquidLayers[_numberMixingLayers].amount < MaxAmountMixingLayer)

@@ -6,7 +6,7 @@ public class Cocktail : MonoBehaviour
 {
     private const int AlphaDefault = 1;
 
-    [SerializeField] private MixedState _mixedState;
+    [SerializeField] private MixingState _mixingState;
 
     private LiquidVolume _liquidVolume;
 
@@ -17,12 +17,12 @@ public class Cocktail : MonoBehaviour
 
     private void OnEnable()
     {
-        _mixedState.Mixed += OnMixed;
+        _mixingState.Mixed += OnMixed;
     }
 
     private void OnDisable()
     {
-        _mixedState.Mixed -= OnMixed;
+        _mixingState.Mixed -= OnMixed;
     }
 
     private void OnMixed()

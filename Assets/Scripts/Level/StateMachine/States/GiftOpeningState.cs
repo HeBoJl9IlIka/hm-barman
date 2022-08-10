@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GiftOpeningState : State
 {
@@ -6,10 +7,12 @@ public class GiftOpeningState : State
 
     public bool IsReady { get; private set; }
 
+    public event UnityAction Showed;
+
     private void OnEnable()
     {
+        Showed?.Invoke();
         _panel.SetActive(true);
-        //animation.Play();
     }
 
     public void ReportReadiness()

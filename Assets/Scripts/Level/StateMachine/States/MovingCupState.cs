@@ -10,8 +10,6 @@ public class MovingCupState : State
     [SerializeField] private Vector3 _defaultRotation;
     [SerializeField] private float _durationMove;
     [SerializeField] private float _durationRotate;
-    [SerializeField] private float _delayReportReadiness;
-    [SerializeField] private UnityEvent _moving;
 
     private Cup _cup;
 
@@ -22,7 +20,6 @@ public class MovingCupState : State
     private void OnEnable()
     {
         _cup = _selectingCupState.Cup;
-        _moving?.Invoke();
         Moving?.Invoke();
 
         Animator animator = _cup.GetComponent<Animator>();

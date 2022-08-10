@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Cup : MonoBehaviour
 {
@@ -8,10 +7,20 @@ public class Cup : MonoBehaviour
 
     public FormFactor Type => _type;
 
+    public event UnityAction Flying;
+
     public enum FormFactor
     {
         Wine,
         Cognac,
         Bear
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.TryGetComponent(out Table table))
+        {
+            Flying?.Invoke();
+        }
     }
 }

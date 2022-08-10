@@ -7,22 +7,19 @@ public class PlayerInterface : MonoBehaviour
 {
     [SerializeField] private ShakerLayers _shakerLayers;
     [SerializeField] private ShakerClosingState _shakerClosingState;
-    [SerializeField] private MixedState _mixedState;
+    [SerializeField] private MixingState _mixingState;
     [SerializeField] private ButtonSelectingCup[] _buttonsSelectingCup;
     [SerializeField] private SelectingCupState _selectingCupState;
     [SerializeField] private PouringState _pouringState;
     [SerializeField] private SelectingTopping[] _selectingToppings;
     [SerializeField] private MovingCupState _movingCupState;
     [SerializeField] private LaunchingCupState _launchingCupState;
+    [SerializeField] private GiftOpeningState _giftOpeningState;
+    [SerializeField] private CollectionStarsState _collectionStarsState;
     [SerializeField] private LevelProgress _level;
     [SerializeField] private Slider _slider;
     [SerializeField] private AnimatorBackground _animatorBackground;
     [SerializeField] private float _sliderValueChangeDuration;
-
-    public event UnityAction PouredShaker;
-    public event UnityAction Mixed;
-    public event UnityAction SelectedTopping;
-
     [SerializeField] private UnityEvent _pouredShaker;
     [SerializeField] private UnityEvent _closed;
     [SerializeField] private UnityEvent _mixed;
@@ -33,12 +30,18 @@ public class PlayerInterface : MonoBehaviour
     [SerializeField] private UnityEvent _movingCup;
     [SerializeField] private UnityEvent _launchingCup;
     [SerializeField] private UnityEvent _launchedCup;
+    [SerializeField] private UnityEvent _showedGift;
+    [SerializeField] private UnityEvent _showedStars;
+
+    public event UnityAction PouredShaker;
+    public event UnityAction Mixed;
+    public event UnityAction SelectedTopping;
 
     private void OnEnable()
     {
         _shakerLayers.Poured += OnPouredShaker;
         _shakerClosingState.Closed += OnClosed;
-        _mixedState.Mixed += OnMixed;
+        _mixingState.Mixed += OnMixed;
 
         foreach (var button in _buttonsSelectingCup)
         {
@@ -56,6 +59,8 @@ public class PlayerInterface : MonoBehaviour
         _movingCupState.Moving += OnMoving;
         _launchingCupState.Launching += OnLaunching;
         _launchingCupState.Launched += OnLaunched;
+        _giftOpeningState.Showed += OnShowedGift;
+        _collectionStarsState.Showed += OnShowedStars;
         _level.Progressed += OnProgressed;
     }
 
@@ -63,7 +68,7 @@ public class PlayerInterface : MonoBehaviour
     {
         _shakerLayers.Poured -= OnPouredShaker;
         _shakerClosingState.Closed -= OnClosed;
-        _mixedState.Mixed -= OnMixed;
+        _mixingState.Mixed -= OnMixed;
 
         foreach (var button in _buttonsSelectingCup)
         {
@@ -81,6 +86,8 @@ public class PlayerInterface : MonoBehaviour
         _movingCupState.Moving -= OnMoving;
         _launchingCupState.Launching -= OnLaunching;
         _launchingCupState.Launched -= OnLaunched;
+        _giftOpeningState.Showed -= OnShowedGift;
+        _collectionStarsState.Showed -= OnShowedStars;
         _level.Progressed -= OnProgressed;
     }
 
@@ -136,6 +143,16 @@ public class PlayerInterface : MonoBehaviour
     private void OnLaunched()
     {
         _launchedCup?.Invoke();
+    }
+
+    private void OnShowedGift()
+    {
+        _showedGift?.Invoke();
+    }
+
+    private void OnShowedStars()
+    {
+        _showedStars?.Invoke();
     }
 
     private void OnProgressed(float progress)

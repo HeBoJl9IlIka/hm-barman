@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class MovingToppingTransition : Transition
 {
-    [SerializeField] private CheckingChoiceToppingsState _checkingChoiceToppingsState;
+    [SerializeField] private SelectingToppingState _selectingToppingState;
 
     private void Update()
     {
-        NeedTransit = _checkingChoiceToppingsState.IsReady;
+        NeedTransit = _selectingToppingState.IsReady;
     }
 }

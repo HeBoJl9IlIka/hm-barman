@@ -7,7 +7,7 @@ public class Mixture : MonoBehaviour
     private const int _targetMixingValue = 20;
     private const int _mixingValueStep = 1;
 
-    [SerializeField] private MixedState _mixedState;
+    [SerializeField] private MixingState _mixingState;
     [SerializeField] private Color _targetColor;
 
     private LiquidVolume _liquidVolume;
@@ -19,14 +19,14 @@ public class Mixture : MonoBehaviour
 
     private void OnEnable()
     {
-        _mixedState.Moving += OnMoving;
-        _mixedState.Mixed += OnMixed;
+        _mixingState.Moving += OnMoving;
+        _mixingState.Mixed += OnMixed;
     }
 
     private void OnDisable()
     {
-        _mixedState.Moving -= OnMoving;
-        _mixedState.Mixed -= OnMixed;
+        _mixingState.Moving -= OnMoving;
+        _mixingState.Mixed -= OnMixed;
     }
 
     private void OnMoving()
@@ -37,7 +37,7 @@ public class Mixture : MonoBehaviour
         {
             for (int i = 0; i < _liquidVolume.liquidLayers.Length; i++)
             {
-                _liquidVolume.liquidLayers[i].color = Color.Lerp(_liquidVolume.liquidLayers[i].color, _targetColor, Mathf.PingPong(Time.time, 1));
+                _liquidVolume.liquidLayers[i].color = Color.Lerp(_liquidVolume.liquidLayers[i].color, _targetColor, Mathf.PingPong(UnityEngine.Time.time, 1));
             }
         }
 

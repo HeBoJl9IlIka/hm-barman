@@ -10,7 +10,7 @@ public class AnimatorDrink : MonoBehaviour
 
     [SerializeField] private LiquidVolume _liquidVolume;
     [SerializeField] private ShakerLayers _shakerLayers;
-    [SerializeField] private MixedState _mixedState;
+    [SerializeField] private MixingState _mixingState;
 
     private Coroutine _currentCoroutine;
     private float _time;
@@ -20,9 +20,9 @@ public class AnimatorDrink : MonoBehaviour
         _shakerLayers.Pouring += OnPouring;
         _shakerLayers.Stopped += OnStopped;
         _shakerLayers.Poured += OnStopped;
-        _mixedState.Moving += OnMoving;
-        _mixedState.Stopped += OnStopped;
-        _mixedState.Mixed += OnStopped;
+        _mixingState.Moving += OnMoving;
+        _mixingState.Stopped += OnStopped;
+        _mixingState.Mixed += OnStopped;
     }
 
     private void OnDisable()
@@ -30,9 +30,9 @@ public class AnimatorDrink : MonoBehaviour
         _shakerLayers.Pouring -= OnPouring;
         _shakerLayers.Stopped -= OnStopped;
         _shakerLayers.Poured -= OnStopped;
-        _mixedState.Moving -= OnMoving;
-        _mixedState.Stopped -= OnStopped;
-        _mixedState.Mixed -= OnStopped;
+        _mixingState.Moving -= OnMoving;
+        _mixingState.Stopped -= OnStopped;
+        _mixingState.Mixed -= OnStopped;
     }
 
     private void OnMoving()
@@ -63,7 +63,7 @@ public class AnimatorDrink : MonoBehaviour
     {
         while (_time < Duration)
         {
-            _time += Time.deltaTime;
+            _time += UnityEngine.Time.deltaTime;
 
             _liquidVolume.turbulence1 = _time * multiplier;
             _liquidVolume.turbulence2 = _time * multiplier;
@@ -76,7 +76,7 @@ public class AnimatorDrink : MonoBehaviour
     {
         while (_time > 0)
         {
-            _time -= Time.deltaTime;
+            _time -= UnityEngine.Time.deltaTime;
 
             _liquidVolume.turbulence1 = _time * PourMultiplier;
             _liquidVolume.turbulence2 = _time * PourMultiplier;

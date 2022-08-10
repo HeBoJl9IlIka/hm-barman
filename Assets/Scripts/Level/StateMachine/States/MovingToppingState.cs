@@ -1,6 +1,6 @@
 public class MovingToppingState : State
 {
-    private const float DelayReportReadiness = 1f;
+    private const float DelayReportReadiness = 0.2f;
 
     public bool IsReady { get; private set; }
 

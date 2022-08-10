@@ -6,7 +6,7 @@ using System.Collections;
 public class AnimationAmountCocktail : MonoBehaviour
 {
     private const float Delay = 0.5f;
-    private const float LevelStep = 0.015f;
+    private const float LevelStep = 1f;
 
     private LiquidVolume _liquidVolume;
 
@@ -26,7 +26,7 @@ public class AnimationAmountCocktail : MonoBehaviour
 
         while (_liquidVolume.level > 0)
         {
-            _liquidVolume.level -= LevelStep;
+            _liquidVolume.level -= LevelStep * UnityEngine.Time.deltaTime;
 
             yield return null;
         }

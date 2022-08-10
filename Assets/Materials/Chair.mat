@@ -99,9 +99,9 @@ Material:
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _RimEnabled: 0
-    - _SelfShadingSize: 0.5
-    - _SelfShadingSizeExtra: 0.6
-    - _ShadowEdgeSize: 0.05
+    - _SelfShadingSize: 0.43
+    - _SelfShadingSizeExtra: 0
+    - _ShadowEdgeSize: 0.245
     - _ShadowEdgeSizeExtra: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularEnabled: 0
@@ -117,10 +117,10 @@ Material:
     - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.48093897, g: 0.5660378, b: 0.2803489, a: 1}
-    - _ColorDim: {r: 0.45184553, g: 0.5283019, b: 0.27162692, a: 1}
+    - _Color: {r: 0.48039216, g: 0.5176471, b: 0.38823533, a: 1}
+    - _ColorDim: {r: 0.39995795, g: 0.44313726, b: 0.2889255, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
-    - _ColorDimExtra: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
+    - _ColorDimExtra: {r: 0.43194067, g: 0.5, b: 0.26179242, a: 1}
     - _ColorDimSteps: {r: 0.85023, g: 0.85034, b: 0.8504499, a: 0.85056}
     - _ColorGradient: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
