@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: 6ff98783d10689e4199627949324d20f
+guid: eb8fb07315601094c83782b4accef495
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 481885912755090174
+    second: Idle
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -16,9 +19,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
-      does not match position in animation file:\n\t'LowManLeftForeArm' : position
-      error = 42.521847 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -32,7 +33,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: test
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -41,10 +71,10 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -75,7 +105,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human:
@@ -87,11 +117,27 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: LowManLeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: -60, y: -60, z: -90}
+        max: {x: 60, y: 60, z: 50}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     - boneName: LowManRightUpLeg
       humanName: RightUpperLeg
       limit:
         min: {x: -60, y: -60, z: -90}
         max: {x: 60, y: 60, z: 50}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManLeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
@@ -103,19 +149,19 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: LowManRightFoot
-      humanName: RightFoot
+    - boneName: LowManLeftFoot
+      humanName: LeftFoot
       limit:
         min: {x: 0, y: -30, z: -50}
         max: {x: 0, y: 30, z: 50}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: LowManRightToeBase
-      humanName: RightToes
+    - boneName: LowManRightFoot
+      humanName: RightFoot
       limit:
-        min: {x: 0, y: 0, z: -50}
-        max: {x: 0, y: 0, z: 50}
+        min: {x: 0, y: -30, z: -50}
+        max: {x: 0, y: 30, z: 50}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
@@ -132,46 +178,6 @@ ModelImporter:
       limit:
         min: {x: -40, y: -40, z: -40}
         max: {x: 40, y: 40, z: 40}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: LowManSpine2
-      humanName: UpperChest
-      limit:
-        min: {x: -20, y: -20, z: -20}
-        max: {x: 20, y: 20, z: 20}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: LowManRightShoulder
-      humanName: RightShoulder
-      limit:
-        min: {x: 0, y: -15, z: -15}
-        max: {x: 0, y: 15, z: 30}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: LowManRightArm
-      humanName: RightUpperArm
-      limit:
-        min: {x: -90, y: -100, z: -60}
-        max: {x: 90, y: 100, z: 100}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: LowManRightForeArm
-      humanName: RightLowerArm
-      limit:
-        min: {x: -90, y: 0, z: -80}
-        max: {x: 90, y: 0, z: 80}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: LowManRightHand
-      humanName: RightHand
-      limit:
-        min: {x: 0, y: -40, z: -80}
-        max: {x: 0, y: 40, z: 80}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
@@ -199,56 +205,72 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: LowManLeftArm
-      humanName: LeftUpperArm
+    - boneName: LowManRightShoulder
+      humanName: RightShoulder
       limit:
-        min: {x: 0, y: -21.66038, z: 0}
-        max: {x: 0, y: 0, z: 60}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 1
-    - boneName: LowManLeftForeArm
-      humanName: LeftLowerArm
-      limit:
-        min: {x: 0, y: 0, z: -40}
-        max: {x: 0, y: 0, z: 40}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 1
-    - boneName: LowManLeftHand
-      humanName: LeftHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 1
-    - boneName: LowManLeftUpLeg
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: -60, y: -60, z: -90}
-        max: {x: 60, y: 60, z: 50}
+        min: {x: 0, y: -15, z: -15}
+        max: {x: 0, y: 15, z: 30}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: LowManLeftLeg
-      humanName: LeftLowerLeg
+    - boneName: LowManLeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManRightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: -90, y: -100, z: -60}
+        max: {x: 90, y: 100, z: 100}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManLeftForeArm
+      humanName: LeftLowerArm
       limit:
         min: {x: -90, y: 0, z: -80}
         max: {x: 90, y: 0, z: 80}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: LowManLeftFoot
-      humanName: LeftFoot
+    - boneName: LowManRightForeArm
+      humanName: RightLowerArm
       limit:
-        min: {x: 0, y: -30, z: -50}
-        max: {x: 0, y: 30, z: 50}
+        min: {x: -90, y: 0, z: -80}
+        max: {x: 90, y: 0, z: 80}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManLeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManRightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: -40, z: -80}
+        max: {x: 0, y: 40, z: 80}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
     - boneName: LowManLeftToeBase
       humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: -50}
+        max: {x: 0, y: 0, z: 50}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManRightToeBase
+      humanName: RightToes
       limit:
         min: {x: 0, y: 0, z: -50}
         max: {x: 0, y: 0, z: 50}
@@ -263,6 +285,14 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: LowManLeftHandThumb1_end
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     - boneName: LowManLeftHandIndex1
       humanName: Left Index Proximal
       limit:
@@ -273,6 +303,14 @@ ModelImporter:
         modified: 0
     - boneName: LowManLeftHandIndex2
       humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManLeftHandIndex2_end
+      humanName: Left Index Distal
       limit:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
@@ -295,6 +333,14 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: LowManLeftHandMiddle2_end
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     - boneName: LowManLeftHandRing1
       humanName: Left Ring Proximal
       limit:
@@ -305,6 +351,14 @@ ModelImporter:
         modified: 0
     - boneName: LowManLeftHandRing2
       humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManLeftHandRing2_end
+      humanName: Left Ring Distal
       limit:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
@@ -327,11 +381,27 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: LowManLeftHandPinky2_end
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     - boneName: LowManRightHandThumb1
       humanName: Right Thumb Proximal
       limit:
         min: {x: 0, y: -25, z: -20}
         max: {x: 0, y: 25, z: 20}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManRightHandThumb1_end
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -40}
+        max: {x: 0, y: 0, z: 35}
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
@@ -345,6 +415,14 @@ ModelImporter:
         modified: 0
     - boneName: LowManRightHandIndex2
       humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManRightHandIndex2_end
+      humanName: Right Index Distal
       limit:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
@@ -367,6 +445,14 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: LowManRightHandMiddle2_end
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     - boneName: LowManRightHandRing1
       humanName: Right Ring Proximal
       limit:
@@ -377,6 +463,14 @@ ModelImporter:
         modified: 0
     - boneName: LowManRightHandRing2
       humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManRightHandRing2_end
+      humanName: Right Ring Distal
       limit:
         min: {x: 0, y: 0, z: -45}
         max: {x: 0, y: 0, z: 45}
@@ -399,96 +493,87 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: LowManRightHandPinky2_end
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: -45}
+        max: {x: 0, y: 0, z: 45}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowManSpine2
+      humanName: UpperChest
+      limit:
+        min: {x: -20, y: -20, z: -20}
+        max: {x: 20, y: 20, z: 20}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     skeleton:
-    - name: Male Hands(Clone)
+    - name: test(Clone)
       parentName: 
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Head 1 Male Bald
-      parentName: Male Hands(Clone)
-      position: {x: -0, y: 5.293956e-23, z: -0.0000000040949577}
-      rotation: {x: 0.00000008146035, y: 1.1763632e-17, z: 6.887626e-18, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
-    - name: Head 1 Male Hair 1
-      parentName: Male Hands(Clone)
-      position: {x: -0, y: 5.293956e-23, z: -0.0000000040949577}
-      rotation: {x: 0.00000008146035, y: 1.1763632e-17, z: 6.887626e-18, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
-    - name: Head 1 Male Hair 2
-      parentName: Male Hands(Clone)
-      position: {x: -0, y: 5.293956e-23, z: -0.0000000040949577}
-      rotation: {x: 0.00000008146035, y: 1.1763632e-17, z: 6.887626e-18, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
-    - name: Head 1 Male Hair 3
-      parentName: Male Hands(Clone)
-      position: {x: -4.0208827e-25, y: 5.293956e-23, z: -0.0000000040949577}
-      rotation: {x: 0.00000008146035, y: 1.1763632e-17, z: 6.887626e-18, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
-    - name: Male
-      parentName: Male Hands(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
+      rotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
       scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
     - name: LowManHips
-      parentName: Male
-      position: {x: -0, y: 0.92160004, z: 0}
+      parentName: test(Clone)
+      position: {x: -0, y: 0.92160004, z: 3.3881317e-23}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManLeftUpLeg
       parentName: LowManHips
       position: {x: -0.09726756, y: -0.057784498, z: 0.0000000034498122}
-      rotation: {x: 0.6883767, y: 0.07382721, z: 0.07077063, w: 0.71810764}
+      rotation: {x: 0.69060034, y: 0.046872806, z: 0.053583667, w: 0.71972424}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: LowManLeftLeg
       parentName: LowManLeftUpLeg
       position: {x: -0.00000014260411, y: 0.000000077626396, z: 0.41396242}
-      rotation: {x: 0.06093687, y: 0.025125531, z: -0.007978735, w: 0.99779344}
+      rotation: {x: 0.060936853, y: 0.02512553, z: -0.007978734, w: 0.99779344}
       scale: {x: 0.99999994, y: 1.0000001, z: 1}
     - name: LowManLeftFoot
       parentName: LowManLeftLeg
-      position: {x: -0.00000034323892, y: -0.000000038763368, z: 0.35561472}
-      rotation: {x: -0.52928215, y: 0.00394459, z: 0.0532976, w: 0.84676105}
+      position: {x: -0.00000045776366, y: 0.000000282526, z: 0.3556148}
+      rotation: {x: -0.52928203, y: 0.003944558, z: 0.053297684, w: 0.8467611}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManLeftToeBase
       parentName: LowManLeftFoot
-      position: {x: 0.000000049695373, y: 0.000000008166836, z: 0.18345621}
-      rotation: {x: -0.26146156, y: 0.046164513, z: 0.012520741, w: 0.964028}
+      position: {x: -0.0000000047683715, y: 0.00000037193297, z: 0.18345626}
+      rotation: {x: -0.2614616, y: 0.046164535, z: 0.012520783, w: 0.96402794}
       scale: {x: 0.99999994, y: 1.0000001, z: 1}
     - name: LowManLeftToeBase_end
       parentName: LowManLeftToeBase
-      position: {x: -0, y: 0.18345615, z: 0}
+      position: {x: 0.00000012397766, y: 0.18345629, z: -0.00000061035155}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManRightUpLeg
       parentName: LowManHips
       position: {x: 0.09726756, y: -0.057784498, z: 0.0000000034498122}
-      rotation: {x: 0.6903673, y: -0.049636655, z: -0.04758162, w: 0.7201842}
+      rotation: {x: 0.69678026, y: 0.0150793865, z: 0.007885269, w: 0.71708286}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: LowManRightLeg
       parentName: LowManRightUpLeg
-      position: {x: 0.00000014260411, y: 0.000000077626396, z: 0.41396242}
-      rotation: {x: 0.06093687, y: -0.025125531, z: 0.007978735, w: 0.99779344}
+      position: {x: -0.000000085830685, y: 0.0000013637542, z: 0.41396236}
+      rotation: {x: 0.060936917, y: -0.025125649, z: 0.007978682, w: 0.99779344}
       scale: {x: 0.99999994, y: 1.0000001, z: 1}
     - name: LowManRightFoot
       parentName: LowManRightLeg
-      position: {x: 0.00000034323892, y: -0.000000038763368, z: 0.35561472}
-      rotation: {x: -0.5292821, y: -0.003944583, z: -0.053297605, w: 0.84676105}
+      position: {x: 0.00000023841858, y: 0.0000013208389, z: 0.35561478}
+      rotation: {x: -0.531062, y: -0.05702953, z: -0.077422574, w: 0.84185904}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManRightToeBase
       parentName: LowManRightFoot
-      position: {x: -0.000000054091213, y: 0.000000001610325, z: 0.18345623}
-      rotation: {x: -0.26146147, y: -0.046164524, z: -0.012520742, w: 0.964028}
+      position: {x: -0.00000029563904, y: 0.0000011634827, z: 0.18345615}
+      rotation: {x: -0.2614614, y: -0.04616458, z: -0.012520742, w: 0.96402806}
       scale: {x: 1, y: 1, z: 0.99999994}
     - name: LowManRightToeBase_end
       parentName: LowManRightToeBase
-      position: {x: -0, y: 0.18345617, z: 0}
+      position: {x: 0.0000001335144, y: 0.18345615, z: -0.0000014019012}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManSpine
       parentName: LowManHips
-      position: {x: -0, y: 0.06451187, z: 0}
-      rotation: {x: -0.6988177, y: -0.10795343, z: 0.10795343, w: 0.6988177}
+      position: {x: 0.00000002280952, y: 0.06451141, z: 0}
+      rotation: {x: -0.69920605, y: -0.105401285, z: 0.10540122, w: 0.6992082}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManSpine1
       parentName: LowManSpine
@@ -497,38 +582,38 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: LowManSpine2
       parentName: LowManSpine1
-      position: {x: 0.000000053240736, y: 0, z: 0.14704956}
-      rotation: {x: 0, y: -0.35293907, z: -0, w: 0.93564636}
+      position: {x: 0.000000053240736, y: 3.3881317e-23, z: 0.14704956}
+      rotation: {x: 0, y: -0.352939, z: -0, w: 0.93564636}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManLeftShoulder
       parentName: LowManSpine2
       position: {x: -0.00000026226044, y: 0, z: 0.09767824}
-      rotation: {x: -0.41203037, y: 0.00000001801042, z: 0.9111701, w: 0.000000039828514}
+      rotation: {x: -0.4120305, y: -0.00000006646445, z: 0.91117007, w: 0.00000006646445}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManLeftArm
       parentName: LowManLeftShoulder
-      position: {x: -0.0000004832598, y: 0, z: 0.09867812}
-      rotation: {x: 0.21474017, y: 0.21336412, z: -0.5696073, w: 0.76413995}
+      position: {x: -0.0000004832598, y: 1.6940659e-23, z: 0.09867812}
+      rotation: {x: 0.0024387687, y: -0.019412078, z: 0.20163664, w: 0.97926503}
       scale: {x: 0.99999994, y: 1, z: 0.99999994}
     - name: LowManLeftForeArm
       parentName: LowManLeftArm
-      position: {x: -0.012, y: 0.015, z: 0.216}
-      rotation: {x: 0.5077773, y: -0.2681579, z: 0.6990191, w: 0.4261759}
+      position: {x: 0.0000009918213, y: 0.000000038146972, z: 0.25175706}
+      rotation: {x: -0.035399273, y: -0.010222583, z: 0.4251787, w: 0.90435916}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: LowManLeftHand
       parentName: LowManLeftForeArm
       position: {x: -0.0000005605242, y: -0.0000001881077, z: 0.26024285}
-      rotation: {x: -0.3668852, y: 0.012071605, z: -0.0021094524, w: 0.93018556}
+      rotation: {x: -0.36638078, y: 0.05575996, z: -0.019344075, w: 0.9285913}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManLeftHandIndex1
       parentName: LowManLeftHand
       position: {x: -0.02409304, y: -0.055163946, z: 0.08407598}
-      rotation: {x: 0.9115933, y: 0.1181507, z: -0.21402723, w: -0.33050022}
+      rotation: {x: 0.9115933, y: 0.11815069, z: -0.2140274, w: -0.33050016}
       scale: {x: 1, y: 1.0000001, z: 1.0000007}
     - name: LowManLeftHandIndex2
       parentName: LowManLeftHandIndex1
       position: {x: -0.019423757, y: 0.0023515965, z: -0.030042682}
-      rotation: {x: -0.1491574, y: -0.49946102, z: 0.69119596, w: 0.50053865}
+      rotation: {x: -0.14915735, y: -0.49946108, z: 0.6911959, w: 0.50053865}
       scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
     - name: LowManLeftHandIndex2_end
       parentName: LowManLeftHandIndex2
@@ -538,42 +623,42 @@ ModelImporter:
     - name: LowManLeftHandMiddle1
       parentName: LowManLeftHand
       position: {x: -0.022832744, y: -0.06642447, z: 0.07294309}
-      rotation: {x: 0.9115934, y: 0.11815059, z: -0.21402721, w: -0.33050013}
+      rotation: {x: 0.9115933, y: 0.11815062, z: -0.21402724, w: -0.33050022}
       scale: {x: 0.99999994, y: 1, z: 1.0000001}
     - name: LowManLeftHandMiddle2
       parentName: LowManLeftHandMiddle1
       position: {x: -0.019423706, y: 0.0023516074, z: -0.030042741}
-      rotation: {x: -0.14915754, y: -0.499461, z: 0.69119614, w: 0.50053835}
+      rotation: {x: -0.1491575, y: -0.499461, z: 0.6911961, w: 0.5005384}
       scale: {x: 1, y: 1.0000001, z: 1.0000001}
     - name: LowManLeftHandMiddle2_end
       parentName: LowManLeftHandMiddle2
-      position: {x: -0, y: 0.09924485, z: 0}
+      position: {x: -1.4210854e-16, y: 0.09924485, z: -2.842171e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManLeftHandPinky1
       parentName: LowManLeftHand
       position: {x: -0.020338088, y: -0.088713795, z: 0.0509064}
-      rotation: {x: 0.9115933, y: 0.118150614, z: -0.2140272, w: -0.3305003}
+      rotation: {x: 0.9115933, y: 0.11815062, z: -0.21402724, w: -0.33050022}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: LowManLeftHandPinky2
       parentName: LowManLeftHandPinky1
       position: {x: -0.019423649, y: 0.0023515795, z: -0.03004266}
-      rotation: {x: -0.14915751, y: -0.4994609, z: 0.69119614, w: 0.50053847}
+      rotation: {x: -0.14915752, y: -0.49946097, z: 0.691196, w: 0.5005386}
       scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
     - name: LowManLeftHandPinky2_end
       parentName: LowManLeftHandPinky2
-      position: {x: -0, y: 0.09924485, z: 0}
+      position: {x: 1.4210854e-16, y: 0.09924485, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManLeftHandRing1
       parentName: LowManLeftHand
       position: {x: -0.02171767, y: -0.07638747, z: 0.063093014}
-      rotation: {x: 0.9115933, y: 0.118150614, z: -0.2140272, w: -0.3305003}
+      rotation: {x: 0.9115933, y: 0.11815062, z: -0.21402724, w: -0.33050022}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: LowManLeftHandRing2
       parentName: LowManLeftHandRing1
       position: {x: -0.019423684, y: 0.002351581, z: -0.030042712}
-      rotation: {x: -0.1491575, y: -0.49946097, z: 0.69119614, w: 0.5005384}
+      rotation: {x: -0.1491575, y: -0.499461, z: 0.6911961, w: 0.5005384}
       scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
     - name: LowManLeftHandRing2_end
       parentName: LowManLeftHandRing2
@@ -582,58 +667,58 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: LowManLeftHandThumb1
       parentName: LowManLeftHand
-      position: {x: 0.00000053346156, y: -0.00000032879592, z: 0.07503349}
-      rotation: {x: -0.2668218, y: 0.6740301, z: 0.5708047, w: -0.3855796}
+      position: {x: 0.0000004959106, y: -0.00000045776366, z: 0.07503364}
+      rotation: {x: 0.42473346, y: -0.31541473, z: -0.72362024, w: 0.4432706}
       scale: {x: 0.99999994, y: 1, z: 1}
     - name: LowManLeftHandThumb1_end
       parentName: LowManLeftHandThumb1
-      position: {x: -0, y: 0.08623934, z: 0}
+      position: {x: -1.4210854e-16, y: 0.08623934, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManNeck
       parentName: LowManSpine2
-      position: {x: 0.0971186, y: 0, z: 0.110414274}
-      rotation: {x: 0, y: 0.35293898, z: -0, w: 0.93564636}
+      position: {x: 0.0971186, y: -3.3881317e-23, z: 0.110414274}
+      rotation: {x: 0, y: 0.35293895, z: -0, w: 0.93564636}
       scale: {x: 0.9999999, y: 1, z: 0.9999999}
     - name: LowManHead
       parentName: LowManNeck
-      position: {x: 0.00000001351647, y: 0, z: 0.10339248}
-      rotation: {x: 0.7071068, y: -1.2560731e-15, z: 1.2560751e-15, w: 0.7071067}
+      position: {x: 0.00000001351647, y: 3.3881317e-23, z: 0.10339248}
+      rotation: {x: 0.7071068, y: 5.765451e-24, z: 8.6595606e-17, w: 0.7071067}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManHead_end
       parentName: LowManHead
-      position: {x: -0, y: 0.10339248, z: 0}
+      position: {x: -3.3881317e-23, y: 0.10339248, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManRightShoulder
       parentName: LowManSpine2
-      position: {x: 0.096879706, y: 0, z: 0.012464094}
-      rotation: {x: -8.102306e-17, y: 0.91116476, z: 8.102306e-17, w: 0.41204223}
+      position: {x: 0.096879706, y: -3.3881317e-23, z: 0.012464094}
+      rotation: {x: 0.00000012132892, y: 0.91116476, z: -0.000000054866746, w: 0.41204226}
       scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
     - name: LowManRightArm
       parentName: LowManRightShoulder
       position: {x: -0.00000063584736, y: -0.000000009536743, z: 0.09867809}
-      rotation: {x: -0.000000010536781, y: 0.27875447, z: -0.000000010536643, w: 0.96036243}
+      rotation: {x: 0.0012490453, y: 0.04921227, z: -0.040038552, w: 0.99798477}
       scale: {x: 0.99999994, y: 1, z: 0.99999994}
     - name: LowManRightForeArm
       parentName: LowManRightArm
       position: {x: 0.0000006496906, y: 0, z: 0.25175828}
-      rotation: {x: -0.103143334, y: 0.057297993, z: -0.009897255, w: 0.9929655}
+      rotation: {x: 0.010315461, y: 0.013919467, z: 0.28059554, w: 0.95966977}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManRightHand
       parentName: LowManRightForeArm
       position: {x: -0.0000001618528, y: 0.00000015346613, z: 0.26024285}
-      rotation: {x: 0.3559306, y: 0.23220111, z: 0.089008965, w: 0.9008183}
+      rotation: {x: 0.36638096, y: 0.055759765, z: 0.019344134, w: 0.9285912}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManRightHandIndex1
       parentName: LowManRightHand
       position: {x: -0.023979839, y: 0.056175184, z: 0.08307631}
-      rotation: {x: -0.4808994, y: 0.37188467, z: 0.77413374, w: -0.17650656}
+      rotation: {x: -0.48089936, y: 0.37188464, z: 0.77413374, w: -0.17650668}
       scale: {x: 0.99999994, y: 0.9999998, z: 1}
     - name: LowManRightHandIndex2
       parentName: LowManRightHandIndex1
       position: {x: -0.030084465, y: 0.0023515543, z: 0.01935918}
-      rotation: {x: 0.69119614, y: -0.50053865, z: 0.1491579, w: 0.4994606}
+      rotation: {x: 0.6911962, y: -0.5005387, z: 0.14915779, w: 0.4994605}
       scale: {x: 1.0000001, y: 1.0000001, z: 1}
     - name: LowManRightHandIndex2_end
       parentName: LowManRightHandIndex2
@@ -643,78 +728,58 @@ ModelImporter:
     - name: LowManRightHandMiddle1
       parentName: LowManRightHand
       position: {x: -0.022615368, y: 0.06836655, z: 0.07102314}
-      rotation: {x: -0.48089916, y: 0.37188482, z: 0.7741338, w: -0.17650642}
+      rotation: {x: -0.48089892, y: 0.37188485, z: 0.774134, w: -0.17650643}
       scale: {x: 1, y: 0.9999999, z: 0.9999997}
     - name: LowManRightHandMiddle2
       parentName: LowManRightHandMiddle1
       position: {x: -0.030084467, y: 0.0023515543, z: 0.019359052}
-      rotation: {x: 0.69119614, y: -0.5005385, z: 0.14915758, w: 0.49946085}
+      rotation: {x: 0.69119626, y: -0.5005385, z: 0.14915754, w: 0.49946067}
       scale: {x: 1, y: 1.0000001, z: 1}
     - name: LowManRightHandMiddle2_end
       parentName: LowManRightHandMiddle2
-      position: {x: -0, y: 0.09924485, z: 0}
+      position: {x: 2.842171e-16, y: 0.09924485, z: -1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManRightHandPinky1
       parentName: LowManRightHand
       position: {x: -0.020281026, y: 0.08922366, z: 0.050402515}
-      rotation: {x: -0.48089933, y: 0.37188444, z: 0.7741339, w: -0.17650662}
+      rotation: {x: -0.48089936, y: 0.3718843, z: 0.77413386, w: -0.17650674}
       scale: {x: 1, y: 0.9999998, z: 0.99999994}
     - name: LowManRightHandPinky2
       parentName: LowManRightHandPinky1
       position: {x: -0.03008453, y: 0.0023515427, z: 0.019359}
-      rotation: {x: 0.6911961, y: -0.50053877, z: 0.14915775, w: 0.49946064}
+      rotation: {x: 0.6911962, y: -0.50053865, z: 0.14915776, w: 0.49946055}
       scale: {x: 1, y: 1.0000001, z: 1}
     - name: LowManRightHandPinky2_end
       parentName: LowManRightHandPinky2
-      position: {x: -0, y: 0.09924485, z: 0}
+      position: {x: -0, y: 0.09924485, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManRightHandRing1
       parentName: LowManRightHand
       position: {x: -0.02152786, y: 0.078083366, z: 0.061416533}
-      rotation: {x: -0.4808993, y: 0.37188473, z: 0.77413374, w: -0.17650653}
+      rotation: {x: -0.48089927, y: 0.37188452, z: 0.77413386, w: -0.1765066}
       scale: {x: 1, y: 0.9999999, z: 1}
     - name: LowManRightHandRing2
       parentName: LowManRightHandRing1
       position: {x: -0.030084554, y: 0.002351553, z: 0.019359076}
-      rotation: {x: 0.69119614, y: -0.5005386, z: 0.1491577, w: 0.49946073}
+      rotation: {x: 0.69119614, y: -0.5005386, z: 0.14915769, w: 0.49946073}
       scale: {x: 1, y: 1.0000001, z: 0.99999994}
     - name: LowManRightHandRing2_end
       parentName: LowManRightHandRing2
-      position: {x: -0, y: 0.09924485, z: 0}
+      position: {x: 1.4210854e-16, y: 0.09924485, z: 1.4210854e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: LowManRightHandThumb1
       parentName: LowManRightHand
       position: {x: 0.00000045359133, y: 0.0000005299544, z: 0.075033106}
-      rotation: {x: 0.76998293, y: -0.029940281, z: -0.10057219, w: 0.62937677}
+      rotation: {x: 0.72388226, y: -0.22461163, z: 0.06380032, w: 0.64921004}
       scale: {x: 1, y: 0.9999999, z: 0.99999976}
     - name: LowManRightHandThumb1_end
       parentName: LowManRightHandThumb1
-      position: {x: -0, y: 0.086239174, z: 0}
+      position: {x: -2.842171e-16, y: 0.086239174, z: -3.5527136e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Pants Male
-      parentName: Male Hands(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.00000008146035, y: 1.1763632e-17, z: 6.887626e-18, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
-    - name: Shorts Male
-      parentName: Male Hands(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.00000008146035, y: 1.1763632e-17, z: 6.887626e-18, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
-    - name: Torso Male Long Sleeves
-      parentName: Male Hands(Clone)
-      position: {x: 7.05818e-17, y: -1.6018475e-10, z: -3.3087225e-24}
-      rotation: {x: 0.00000008146035, y: 1.1763631e-17, z: 6.887626e-18, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
-    - name: Torso Male Short Sleeves
-      parentName: Male Hands(Clone)
-      position: {x: -0, y: -1.6018475e-10, z: -3.3087225e-24}
-      rotation: {x: 0.00000008146035, y: 1.1763631e-17, z: 6.887626e-18, w: 1}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000005}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -725,10 +790,10 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 0
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 1

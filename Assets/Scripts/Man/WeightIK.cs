@@ -4,7 +4,7 @@ using UnityEngine.Animations.Rigging;
 
 public class WeightIK : MonoBehaviour
 {
-    private const float WeightStep = 0.2f;
+    private const float WeightStep = 0.3f;
 
     [SerializeField] private LaunchingCupState _launchingCupState;
     [SerializeField] private Rig _rig;
