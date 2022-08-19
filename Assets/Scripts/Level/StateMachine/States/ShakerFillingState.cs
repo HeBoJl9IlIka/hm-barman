@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ShakerFillingState : State
 {
-    private const float _delayReportReadiness = 1;
+    private const float _delayReportReadiness = 1f;
 
     [SerializeField] private ShakerLayers _shakerLayers;
 

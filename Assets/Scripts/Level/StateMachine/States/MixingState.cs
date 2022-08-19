@@ -31,7 +31,7 @@ public class MixingState : State
         
         if (_isMixing)
         {
-            MixingTime += UnityEngine.Time.deltaTime;
+            MixingTime += Time.deltaTime;
             Moving?.Invoke();
         }
     }

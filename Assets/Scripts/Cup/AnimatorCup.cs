@@ -7,7 +7,6 @@ public class AnimatorCup : MonoBehaviour
     [SerializeField] private SelectingCup _selectingCup;
 
     private const string MovingRight = "MovingRight";
-    private const string MovingDown = "MovingDown";
 
     private Animator _animator;
     private AnimationAmountCocktailCup _amountCocktailCup;

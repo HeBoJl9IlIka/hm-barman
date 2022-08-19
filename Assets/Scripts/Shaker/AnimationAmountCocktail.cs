@@ -26,7 +26,7 @@ public class AnimationAmountCocktail : MonoBehaviour
 
         while (_liquidVolume.level > 0)
         {
-            _liquidVolume.level -= LevelStep * UnityEngine.Time.deltaTime;
+            _liquidVolume.level -= LevelStep * Time.deltaTime;
 
             yield return null;
         }

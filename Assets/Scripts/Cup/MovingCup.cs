@@ -4,7 +4,6 @@ using UnityEngine;
 public class MovingCup : MonoBehaviour
 {
     [SerializeField] private GiftOpeningState _giftOpeningState;
-    [SerializeField] private Vector3 _defaultPosition;
 
     private Rigidbody _rigidbody;
 

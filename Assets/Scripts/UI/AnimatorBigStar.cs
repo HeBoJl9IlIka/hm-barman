@@ -6,7 +6,6 @@ public class AnimatorBigStar : MonoBehaviour
     private const string Active = "Active";
 
     [SerializeField] private GameObject _particleSystem;
-
     [SerializeField] private Animator _animator;
 
     public bool IsActive { get; private set; }
